@@ -1,71 +1,54 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
-#include <stddef.h>
 
+int main()
+{
+     int height;
+     printf("How many floors do you want:");
+     scanf("%d",&height);
+     int i;
+     int j;
+     int k;
+     int stars;
+     int spaces;
 
+     //This is pyramid
 
-int main(void) {
-	int searchedNum = 0;
-    int userNum = 0;
-    int selector = 0;
-    int i ;
-    int num ;
-    int okey =scanf("%d",&num);
-    if(okey)
-    {
-      printf("All Right\n");
-    }else{
-        printf("Hey ,what you doing!!!");
-    }
-
-
-
-    for(;;);
-    srand(time(NULL));
-    searchedNum = rand()%10;
-    for(i = 0;i < 3;i++)
+     for(i = 0;i <= height; i++)
         {
-            for(;;){
-              printf("\nEnter the number");
+        for(j = 0; j <= i - 1; j++){
+         printf("*");
+        }
+         printf("\n");
+        }
+     printf("\n");
 
-            scanf("%d",&userNum);
-              if(userNum < 0)
-                {
-                 printf("\nTry again\n");
-                 continue;
-            }
-            break;
-            }
-            if(userNum==searchedNum)
-                {
-                    printf("\nYou won");
-                    break;
-            }
-            if(userNum < searchedNum)
-            {
-                printf("More");
-            }
-            if(userNum > searchedNum){
-                    printf("Less");
-
-            }
-
-                return 0;
-            }
-
-
-    printf("\nContinue or exit? Yes/No");
-    scanf("%d",&selector);
-    if(selector==0)
+     for(i = 0; i < height; i++)
         {
-            return 0;
-    }
-    return 0;
+        for(j = 0; j < height - i; j++ )
+            printf("*");
+        printf("\n");
+        }
+
+     //This is
+
+     for(i = 0; spaces = height , stars =- 1; i <= height; i++,stars += 2 ;spaces--)
+        {
+        for(j = 0;j < spaces;j++){
+            printf(" ");
+        }
+        for(k = 0;k < stars;k++)
+        {
+         printf("*");
+        }
+         printf("\n");
+        }
+     for(i = 0;i < height - 1;i++)
+      {
+      printf(" ");
+      }
+      printf("\n");
 }
-
-
-
 
 
 

@@ -6,15 +6,12 @@
 
 
 int main(void) {
-	int searchedNum = 0;
+    int searchedNum = 0;
     int userNum = 0;
     int selector = 0;
     int i ;
     int num ;
-
-
-
-
+	
     for(;;);
     srand(time(NULL));
     searchedNum = rand()%10;
@@ -63,7 +60,12 @@ int main(void) {
             return 0;
     }
     return 0;
-}
+}	
+
+
+
+
+   
 
 
 

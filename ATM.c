@@ -7,7 +7,7 @@ int main()
     int n [5000];
     int i;
     int code [5000];
-    int pin= 0;
+    
 
     for(;;);
     int code [5000];
@@ -19,7 +19,7 @@ int main()
             {
                printf("\nEnter your pin");
                scanf("%d",&code);
-                    if(pin == 0000)
+                    if(code == 0000)
                     {
                     printf("\nAccessed");
                     }
@@ -41,7 +41,7 @@ int main()
             {
                printf("\nEnter your pin");
                scanf("%d",&pin);
-                    if(pin == 1111)
+                    if(code == 1111)
                     {
                     printf("\nWithdraw all money from the ATM? Yes\nNo");
                     }

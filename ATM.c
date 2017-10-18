@@ -7,19 +7,19 @@ int main()
     int n [5000];
     int i;
     int code [5000];
-    
+    int pin = 0;
 
     for(;;);
     int code [5000];
     srand (time(NULL));
-    code [] = rand()%5000;
+    pin = rand() %5000;
     for(i = 0;i < 3;i++)
     {
         for(;;)
             {
                printf("\nEnter your pin");
-               scanf("%d",&code);
-                    if(code == 0000)
+               scanf("%d",&pin);
+                    if(pin == 0000)
                     {
                     printf("\nAccessed");
                     }
@@ -40,8 +40,8 @@ int main()
             for(;;)
             {
                printf("\nEnter your pin");
-               scanf("%d",&code);
-                    if(code == 1111)
+               scanf("%d",&pin);
+                    if(pin == 1111)
                     {
                     printf("\nWithdraw all money from the ATM? Yes\nNo");
                     }

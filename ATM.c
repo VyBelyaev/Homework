@@ -40,7 +40,7 @@ int main()
             for(;;)
             {
                printf("\nEnter your pin");
-               scanf("%d",&pin);
+               scanf("%d",&code);
                     if(code == 1111)
                     {
                     printf("\nWithdraw all money from the ATM? Yes\nNo");

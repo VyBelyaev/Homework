@@ -11,8 +11,8 @@ int main()
 
     for(;;);
     int code [5000];
-    for(i = 0;i <5000;i++)
-    
+    srand (time(NULL));
+    code [] = rand()%5000;
     for(i = 0;i < 3;i++)
     {
         for(;;)

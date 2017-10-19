@@ -39,18 +39,19 @@ int main()
                         printf("\nView balance");
                         for(i =0; i <= 5000;i ++)
                         printf("%7d\n" , i ,n[i]);
+                        printf("\nDo you want to withdraw all money ? YES/No");
                         break ;
-
                     }
                     else if(code != 0000)
                     {
                       printf("Access denied");
+                    }
 
 
                     }
-               }
                     return 0;
 }
+
 
     
     

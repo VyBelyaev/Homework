@@ -8,8 +8,11 @@ int main()
                srand(time(NULL));
                pin = rand()% 5000;
                int code = 0;
+               int i;
+               for(;;){
                printf("\nEnter your pin :");
                scanf("%d",&code);
+               for(i = 0;i < 3;i ++);
                     if(code == 0000)
                     {
                     printf("\nAccessed");
@@ -22,6 +25,8 @@ int main()
                     printf("\nView balance");
                     for(i =0; i < 1;i ++)
                     printf("%7d\n" , i ,n[i]);
+                    break ;
+
                     }
                     else if (code == 1111)
                     {
@@ -34,12 +39,19 @@ int main()
                         printf("\nView balance");
                         for(i =0; i <= 5000;i ++)
                         printf("%7d\n" , i ,n[i]);
+                        break ;
+
                     }
                     else if(code != 0000)
                     {
                       printf("Access denied");
+
+
                     }
+               }
+                    return 0;
 }
+
     
     
         

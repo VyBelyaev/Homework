@@ -13,7 +13,7 @@ int main()
                printf("\nEnter your pin :");
                scanf("%d",&code);
                for(i = 0;i < 3;i ++);
-                    if(code == 0000)
+                    if(code == 2323)
                     {
                     printf("\nAccessed");
                     int n [5000] ,i;
@@ -24,7 +24,7 @@ int main()
 
                     printf("\nView balance");
                     for(i =0; i < 1;i ++)
-                    printf("%7d\n" , i ,n[i]);
+                    printf("%d\n" , i ,n[i]);
                     break ;
 
                     }
@@ -38,7 +38,7 @@ int main()
                         printf("\nFund your account");
                         printf("\nView balance");
                         for(i =0; i <= 5000;i ++)
-                        printf("%7d\n" , i ,n[i]);
+                        printf("%d\n" , i ,n[i]);
                         printf("\nDo you want to withdraw all money ? YES/No");
                         break ;
                     }

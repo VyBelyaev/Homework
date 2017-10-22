@@ -4,53 +4,98 @@
 
 int main()
 {
-               int pin [5000];
-               srand(time(NULL));
-               pin = rand()% 5000;
-               int code = 0;
-               int i;
-               for(;;){
-               printf("\nEnter your pin :");
-               scanf("%d",&code);
-               for(i = 0;i < 3;i ++);
-                    if(code == 2323)
-                    {
-                    printf("\nAccessed");
-                    int n [5000] ,i;
-                    for (i = 0; i < 1;i ++)
-                    n[i] = 0;
-                    printf("\nWithdraw money");
-                    printf("\nFund your account");
+    int const pincode [10000];
+  
+    srand(time(NULL));
+  
+    pincode = rand()% 10000;
+  
+    int const userpin [10000]
+      
+    userpin = rand()%10000;
+  
+    int pinadmin = 0;
+  
+    int userpin = 0;
+  
+    int i = 0;
 
-                    printf("\nView balance");
-                    for(i =0; i < 1;i ++)
-                    printf("%d\n" , i ,n[i]);
-                    break ;
+    int sum = 0;
 
-                    }
-                    else if (code == 1111)
-                    {
-                        printf("You got admin rights");
-                        int n [5000] ,i;
-                        for (i = 0; i <= 5000;i ++)
-                        n[i] = 0;
-                        printf("\nWithdraw money");
-                        printf("\nFund your account");
-                        printf("\nView balance");
-                        for(i =0; i <= 5000;i ++)
-                        printf("%d\n" , i ,n[i]);
-                        printf("\nDo you want to withdraw all money ? YES/No");
-                        break ;
-                    }
-                    else if(code != 0000)
-                    {
-                      printf("Access denied");
-                    }
+     for(;;){
+      printf("\nEnter your pin :");
+
+      scanf("%d",&pincode);
+
+      for(i = 0;i < 3;i ++){
+
+        printf("The number of attempts ended");
+
+      }
+      //Ячейка абонента.
+        if(pincode == userpin){
+
+            printf("View balance");
+
+            printf("Withdraw money");
+
+            printf("Fund your account");
+
+        for (i = 0; i < 1;i ++)
+
+           n[i] = 0;
+
+            int cells [10000] ,i;
+
+             for (i = 0; i < 1;i ++)
+
+             n[i] = 0;
+
+          for(i =0; i < 1;i ++)
+            printf("%d\n" , i ,n[i]);
+
+            printf("Enter your sum-");
+
+            scanf("%d",&sum);
+            printf("%d\n",sum);
+
+            continue ;
+        }
+        break ;
+    }
+           //Доступ админа.
+           else if (pincode == pinadmin ){
+
+             int cells [10000] ,i;
+
+             for (i = 0; i <= 10000;i ++)
+              n[i] = 0;
+               for(i =0; i <= 10000;i ++)
+
+                printf("%d\n" , i ,n[i]);
+
+                printf("Do you want to with all the money? Yes/No");
+
+                printf("Enter pincode admin");
+
+                scanf("%d",&pinadmin);
+
+             continue ;
+             }
+
+             break ;
 
 
-                    }
-                    return 0;
+    }
+    return 0;
 }
+
+
+
+
+
+
+
 
 
     

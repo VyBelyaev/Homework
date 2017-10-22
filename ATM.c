@@ -79,6 +79,10 @@ int main()
                 printf("Enter pincode admin");
 
                 scanf("%d",&pinadmin);
+               
+               printf("All money withdrawn");
+
+                   
 
              continue ;
              }

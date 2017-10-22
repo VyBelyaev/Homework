@@ -8,9 +8,9 @@ int main()
     int const pincode [10000];
     srand(time(NULL));
     pincode = rand()% 10000;
-    int const userpin [10000];
+    int const userpincode [10000];
     srand(time(NULL));
-    userpin = rand()%10000;
+    userpincode = rand()%10000;
     int pinadmin = 0;
     int userpin = 0;
     int i = 0;
@@ -28,7 +28,7 @@ int main()
 
       }
       //Ячейка абонента.
-        if(pincode == userpin){
+        if(pincode == userpincode){
 
             printf("View balance");
 

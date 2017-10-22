@@ -4,20 +4,15 @@
 
 int main()
 {
+
     int const pincode [10000];
-  
     srand(time(NULL));
-  
     pincode = rand()% 10000;
-  
-    int const userpin [10000]
-      
+    int const userpin [10000];
+    srand(time(NULL));
     userpin = rand()%10000;
-  
     int pinadmin = 0;
-  
     int userpin = 0;
-  
     int i = 0;
 
     int sum = 0;
@@ -29,7 +24,7 @@ int main()
 
       for(i = 0;i < 3;i ++){
 
-        printf("The number of attempts ended");
+
 
       }
       //Ячейка абонента.
@@ -57,7 +52,8 @@ int main()
             printf("Enter your sum-");
 
             scanf("%d",&sum);
-            printf("%d\n",sum);
+            printf("%d\nYour sum",sum);
+            
 
             continue ;
         }
@@ -79,10 +75,9 @@ int main()
                 printf("Enter pincode admin");
 
                 scanf("%d",&pinadmin);
-               
-               printf("All money withdrawn");
-
-                   
+                printf("Enter you sum-");
+                scanf("%d",&sum);
+                printf("%d\nYour sum =",sum);
 
              continue ;
              }
@@ -93,7 +88,6 @@ int main()
     }
     return 0;
 }
-
 
 
 

@@ -11,8 +11,8 @@ int main()
     int const userpincode [10000];
     srand(time(NULL));
     userpincode = rand()%10000 - 1000;
-    int pinadmin = 0;
-    int userpin = 0;
+    int pinadmin = 0; // Код админа 9080
+    int userpincode = 0; //Код клиента 1100
     int i = 0;
 
     int sum = 0;
@@ -28,7 +28,7 @@ int main()
 
 
       }
-      //Ячейка абонента.
+      //Ячейка клиента.
         if(pincode == userpincode){
 
             printf("View balance");
@@ -36,18 +36,16 @@ int main()
             printf("Withdraw money");
 
             printf("Fund your account");
-
-        for (i = 0; i < 1;i ++)
-
-           n[i] = 0;
+      
 
             int cells [10000] ,i;
 
-             for (i = 0; i < 1;i ++)
+             for (i = 0; i < 1;i ++){
 
              n[i] = 0;
 
           for(i =0; i < 1;i ++)
+            }
             printf("%d\n" , i ,n[i]);
 
             printf("Enter your sum-");
@@ -65,10 +63,12 @@ int main()
 
              int cells [10000] ,i;
 
-             for (i = 0; i <= 10000;i ++)
+             for (i = 0; i <= 10000;i ++){
               n[i] = 0;
                for(i =0; i <= 10000;i ++)
-
+                  
+               }
+              
                 printf("%d\n" , i ,n[i]);
 
                 printf("Do you want to with all the money? Yes/No");

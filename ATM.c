@@ -7,10 +7,10 @@ int main()
 
     int const pincode [10000];
     srand(time(NULL));
-    pincode = rand()% 10000;
+    pincode = rand()% 10000 - 1000;
     int const userpincode [10000];
     srand(time(NULL));
-    userpincode = rand()%10000;
+    userpincode = rand()%10000 - 1000;
     int pinadmin = 0;
     int userpin = 0;
     int i = 0;

@@ -18,10 +18,11 @@ int main()
     int sum = 0;
 
      for(;;){
+      //Ввод пинкода.   
       printf("\nEnter your pin :");
 
       scanf("%d",&pincode);
-
+      //Три попытки.
       for(i = 0;i < 3;i ++){
 
 

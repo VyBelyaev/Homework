@@ -65,7 +65,7 @@ int main()
 
             number [i] = 0 ; // Инициализация массива
 
-            printf("%4s\n","Withdraw all money.Yes\No?");
+            printf("%4s\n","Withdraw all money.Yes/No?");
 
             for(i = 0 ;i <= 5000;i++) // Вывод элементов массива
 

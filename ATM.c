@@ -4,91 +4,128 @@
 
 int main()
 {
+    int const pincode [5000];
 
-    int const pincode [10000];
     srand(time(NULL));
-    pincode = rand()% 10000 - 1000;
-    int const userpincode [10000];
+
+    pincode = rand()%5000;
+
+    int const number [5000];
+
     srand(time(NULL));
-    userpincode = rand()%10000 - 1000;
-    int pinadmin = 0; // Код админа 9080
-    int userpincode = 0; //Код клиента 1100
+
+    number = rand()%5000;
+
     int i = 0;
+
+    int userpincode = 0; //Пин код пользователя = 2323
+
+    int adminpincode = 0; //Пин код админа = 9011
 
     int sum = 0;
 
-     for(;;){
-      //Ввод пинкода.   
-      printf("\nEnter your pin :");
-
-      scanf("%d",&pincode);
-      //Три попытки.
-      for(i = 0;i < 3;i ++){
 
 
+    for(i = 0;i < 3;i++){
 
-      }
-      //Ячейка клиента.
-        if(pincode == userpincode){
+        for(;;){
 
-            printf("View balance");
+               //Ввод пин кода
+               printf("\nEnter your pin code");
 
-            printf("Withdraw money");
+                scanf("%d",&userpincode);
 
-            printf("Fund your account");
-      
+                //Ячейка пользователя
 
-            int cells [10000] ,i;
+                  if(pin == userpincode){
 
-             for (i = 0; i < 1;i ++){
+                    printf("\nWithdraw money");
 
-             n[i] = 0;
+                    printf("\nPut money");
 
-          for(i =0; i < 1;i ++)
+                    printf("\nCheck balance");
+
+                    printf("Enter your pin code");
+
+                    scanf("%d",&userpincode);
+
+                    printf("\nEnter your sun-");
+
+                    scanf("%d",sum);
+
+
+                    scanf("%d",sum);
+
+                    int const number[5000];
+
+                     for(i = 0;i < 1;i++)
+
+                       number[i] = 0;
+
+                        printf("%d\n" , i,n[i]);
+
+                         printf("%s/n","Your sum = ","%d");{
+
+                             continue ;
+                         }
+
+                    return 0;
+                }
+
+                //Доступ админа
+                else if (pincode == adminpincode){
+
+                 printf("Withdraw all money");
+
+                 printf("\nEnter your sum-");
+
+                 int const number [5000];
+
+                  for(i = 0;i <5000;i++)
+
+                   number[i] = 0;
+
+                   printf("%s\n");
+
+                   for(i = 0; i  < 5000;i++)
+
+                    printf("%d\n" , i,n[i]);{
+
+                       continue ;
+                     }
+
+                     {
+                       return 0;
+                     }
+
+                }else if(pincode != adminpincode ){
+
+                    printf("Access closed");
+
+                    {
+                      return 0;
+                    }
+
+
+                }else if(pincode != userpincode){
+
+                    printf("Access closed");
+                    {
+                     return 0;
+                    }
+
+                }
+                 return 0;
+
             }
-            printf("%d\n" , i ,n[i]);
 
-            printf("Enter your sum-");
-
-            scanf("%d",&sum);
-            printf("%d\nYour sum",sum);
-            
-
-            continue ;
-        }
-        break ;
-    }
-           //Доступ админа.
-           else if (pincode == pinadmin ){
-
-             int cells [10000] ,i;
-
-             for (i = 0; i <= 10000;i ++){
-              n[i] = 0;
-               for(i =0; i <= 10000;i ++)
-                  
-               }
-              
-                printf("%d\n" , i ,n[i]);
-
-                printf("Do you want to with all the money? Yes/No");
-
-                printf("Enter pincode admin");
-
-                scanf("%d",&pinadmin);
-                printf("Enter you sum-");
-                scanf("%d",&sum);
-                printf("%d\nYour sum =",sum);
-
-             continue ;
-             }
-
-             break ;
-
+           return 0;
 
     }
-    return 0;
-}
+
+
+
+
 
 
 

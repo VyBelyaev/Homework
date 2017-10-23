@@ -4,129 +4,104 @@
 
 int main()
 {
-    int const pincode [5000];
+   int const number [5000] ;
 
-    srand(time(NULL));
+   int const pincode [5000] ;
 
-    pincode = rand()%5000;
+   srand(time(NULL)) ;
 
-    int const number [5000];
+   pincode = rand()%5000;
 
-    srand(time(NULL));
+   int i = 0 ;
 
-    number = rand()%5000;
+   int userpincode = 0;
 
-    int i = 0;
+   int adminpincode = 0;
 
-    int userpincode = 0; //Пин код пользователя = 2323
+   for(i = 0;i < 3; i++){
 
-    int adminpincode = 0; //Пин код админа = 9011
+    for(;;){
 
-    int sum = 0;
+       printf("Enter your pin code:");
 
+       scanf("%",&pincode);
 
+       //Доступ пользователя
 
-    for(i = 0;i < 3;i++){
+       if(pincode == userpincode){
 
-        for(;;){
+           int const number [5000];
 
-               //Ввод пин кода
-               printf("\nEnter your pin code");
+           srand(time(NULL));
 
-                scanf("%d",&userpincode);
+           number = rand()%5000;
 
-                //Ячейка пользователя
+           for(i = 0 ; i <= 5000 ;i++ )
 
-                  if(pin == userpincode){
+             number [i] = 0;   // Инициализация массива
 
-                    printf("\nWithdraw money");
+             printf("%4s%4s%4s\n" ,"Check balance","Withdraw money","Put money");
 
-                    printf("\nPut money");
+           for(i = 0;i < 1;i++)   // Вывод элементов массива
 
-                    printf("\nCheck balance");
+             printf("%4d%4d%4d\n",i,number[i]);
 
-                    printf("Enter your pin code");
-
-                    scanf("%d",&userpincode);
-
-                    printf("\nEnter your sun-");
-
-                    scanf("%d",sum);
+             break;
 
 
-                    scanf("%d",sum);
+       }
 
-                    int const number[5000];
+       //
 
-                     for(i = 0;i < 1;i++)
+       else if(pincode == adminpincode){
 
-                       number[i] = 0;
+        int const number [5000];
 
-                        printf("%d\n" , i,n[i]);
+        srand(time(NULL));
 
-                         printf("%s/n","Your sum = ","%d");{
+        number = rand()%5000;
 
-                             continue ;
-                         }
+        for(i = 0 ; i <= 5000 ; i ++)
 
-                    return 0;
-                }
+            number [i] = 0 ; // Инициализация массива
 
-                //Доступ админа
-                else if (pincode == adminpincode){
+            printf("%4s\n","Withdraw all money.Yes\No?");
 
-                 printf("Withdraw all money");
-
-                 printf("\nEnter your sum-");
-
-                 int const number [5000];
-
-                  for(i = 0;i <5000;i++)
-
-                   number[i] = 0;
-
-                   printf("%s\n");
-
-                   for(i = 0; i  < 5000;i++)
-
-                    printf("%d\n" , i,n[i]);{
-
-                       continue ;
-                     }
-
-                     {
-                       return 0;
-                     }
-
-                }else if(pincode != adminpincode ){
-
-                    printf("Access closed");
-
-                    {
-                      return 0;
-                    }
+            for(i = 0 ;i <= 5000;i++) // Вывод элементов массива
 
 
-                }else if(pincode != userpincode){
+                printf("%d\n",i,number [i]);
 
-                    printf("Access closed");
-                    {
-                     return 0;
-                    }
+                break ;
 
-                }
-                 return 0;
+       }
 
-            }
+       //Проверка
 
-           return 0;
+       else (pincode != userpincode){
+
+          printf("Access close");
+
+          return 0;
+
+       }
+
+       else if(pincode != adminpincode){
+
+          printf("Access close");
+
+          return 0;
+       }
 
     }
 
+    return 0;
 
+   }
 
+  return 0;
 
-
+}
 
 
 

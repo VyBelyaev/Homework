@@ -44,7 +44,7 @@ int main()
 
            for(i = 0;i < 1;i++)   // Вывод элементов массива
 
-             printf("%4d%4d%4d\n",i,number[i]);
+             printf("%4d\n",i,number[i]);
 
              break;
 

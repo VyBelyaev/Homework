@@ -17,9 +17,9 @@ int main() {
      if(stroka[i]==sym)
        count++;
   }
-  printf("In line\n");
+ 
   printf("Symbol ");
-  putchar(sym); // ֲûגמה סטלגמכא
+  putchar(sym); // 
   printf(" occurs %d once",count);
   getchar();
   }

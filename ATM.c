@@ -36,7 +36,7 @@ int main()
         if(userpin < NUMBER_OF_CELLS){
             printf("\nFalse pin code");
         }
-        if() {
+        if(userpin != 0000) {
             printf("\nOnly numbers");
 
         }
@@ -50,17 +50,17 @@ int main()
             printf("\nEXIT,press 3");
             scanf("%d",&adminoperation);
             switch(adminoperation){
-                case 1;
+                case 1:
                 for(i = 0;i < NUMBER_OF_CELLS;i++){
                     printf("%d\n" , countarray[i]);
                 }
                 break;
-                case 2;
+                case 2:
                 for(i = 0;i <NUMBER_OF_CELLS;i++){
                     countarray[i] = 0;
                 }
                 break;
-                case 3;
+                case 3:
                 return 0;
             }
         }
@@ -74,21 +74,21 @@ int main()
                 printf("\nEXIT , press 4");
                 scanf("%d",&money_operation);
                 switch(money_operation){
-                    case 1;
+                    case 1:
                     printf("On your acconts: %d\n",countarray[i]);
                     break;
-                    case 2;
+                    case 2:
                     printf("\nEnter payment :");
                     scanf("%d",&userpay);
                     countarray[i]=countarray[i]+userpay;
                     printf("On your acconts: %d,",countarray[i]);
                     break;
-                    case 3;
+                    case 3:
                     printf("\nHow much do you want to withdraw?");
                     scanf("%d",&userpay);
                     countarray[i]=countarray[i]=userpay;
                     break;
-                    case 4;
+                    case 4:
                     return 0;
                 }
             }

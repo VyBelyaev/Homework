@@ -1,33 +1,25 @@
 #include <stdio.h>
-#include <string.h>
+#include <memory.h>
 #include <stdlib.h>
-int main() {
-  char stroka[100000];
-  char sym;
-  int count;
-  int i;
+#include <string.h>
 
-  printf("Enter line: ");
-  gets(stroka);
-  for(;;){
-  printf("\nEnter symbol : ");
-    sym = getchar();
-    count = 0;
-    for(i=0; stroka[i]!='\0'; i++){
-     if(stroka[i]==sym)
-       count++;
-  }
- 
-  printf("Symbol ");
-  putchar(sym); // 
-  printf(" occurs %d once",count);
-  getchar();
-  }
+int main(void) {
+char stroka[10000];
+int len[10000];
+int i= 0;
+printf("\nEnter your line :");
+scanf("%s",stroka);
 
-  return 0;
+for(i=0;i< stroka[i] !='\0';i++)
+   sym[stroka[i]]++;
+
+printf("\n");
+for(i = 0;i < 200;i++){
+   if(len[i]>0){
+      printf("\n %c - %d" , i,len[i]);
 }
-
-
+}
+}
 
 
 

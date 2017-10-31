@@ -1,61 +1,73 @@
-#include<stdio.h>
-#include<string.h>
-#include<conio.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 
-int main()
-{
- char ***text, stroka[100000];
+void copy(int *xp,int *yp){
+    int temp = *xp;
+    *xp = *yp;
+    *yp = temp;
+}
+void copy(char *xp,char *yp){
+    int temp = *xp;
+    *xp = *yp;
+    *yp = temp;
+}
+int main(){
+const int STR_SIZE = [1000000];
+const int Temp_ArraySize = [100];
+char singleCharArray[Temp_ArraySize];
+int charNumberArray[Temp_ArraySize];
+char *str = new char[STR_SIZE];
+gets(str,STR_SIZE);
+int i = 0;
+for(i = 0;i < Temp_ArraySize;i++){
+    charNumberArray[i] = 0;
+}
+int tempArraycounter = 0;
+for(i = 0;i < strlen(str);i++){
+    char c = str[i];
+    if(c==''){
+        continue;
+    }
+}
+bool isPresent = false;
+int j = 0;
+for(j = 0;j < tempArraycounter;j++){
+    if(singleCharArray[j]==c){
+        isPresent == true;
+    }
+}
+if(isPresent){
+    singleCharArray[tempArraycounter]= c;
+    tempArraycounter++;
+}
+singleCharArray[tempArraycounter]=0;
+for(i = 0;i < strlen(singleCharArray);i++){
+    for(j = 0;j < strlen(str);j++){
+        if(singleCharArray[i]==str[j]){
+            charNumberArray[j]++;
+        }
+    }
+}
+printf("\n");
+for(i = 0;i < strlen(singleCharArray);i++){
+    printf(singleCharArray[i],charNumberArray[i]);
+}
+int i;
+int j;
+int n = tempArraycounter;
+for(i = 0;i < n - 1;i++){
+    for(j = 0;j < n - i - 1;j++){
+        if(charNumberArray[j]>charNumberArray[j + 1]){
+            scanf(&charNumberArray[j],charNumberArray[j + 1]);
+            scanf(&singleCharArray[j],singleCharArray[j + 1]);
+        }
+    }
+}
+printf("\n");
+for(i = 0;i < strlen(singleCharArray);i++){
+    printf(singleCharArray[i],charNumberArray[i]);
+}
 
- int i,j,x,n=1,d,z=0, ch1=0,ch2=0;
-
- //clrscr();
- printf("Enter stroka-\n");
-
- scanf("%d%d",&ch1,&ch2);
-
- text=(char***)malloc(ch1*sizeof(char**));
-
- for(i=0;i<ch1;i++){
-
-   text[i]=(char**)malloc(ch2*sizeof(char*));
-
- for(i=0;i<ch1;i++);
-
- for(j=0;j<ch2;j++){
-
-   text[i][j]=(char*)malloc(50*sizeof(char));
- }
- }
- printf("\n",ch1, ch2);
-
- for(i=0;i<ch1;i++){
-
-   for(j=0;j<ch2;j++);
-
-   scanf("%s",text[i][j]);
-
-   stroka[n-1]=text[0][0][0];
-
-   for(i=0;i<ch1;i++)
-
-   for(j=0;j<ch2;j++)
-
-	 for(x=0;x<strlen(text[i][j]);x++)
-
-	 for(d=0;d<n;d++)
-	{
-	 if(text[i][j][x]==stroka[d]) break;
-
-	 if(d==(n-1)&&(text[i][j][x]!=stroka[d])) {stroka[n]=text[i][j][x];  n+=1;}
-	}
- }
- for(j=0;j<ch2;j++) z+=strlen(text[ch1-1][j]);
-
- printf("Word in stroke - %d\n:\n",n);
-
- for(i=0;i<n;i++) putch(stroka[i]);
-
- printf("\nSimvolov v stroke - %d\n",z);
 
 }

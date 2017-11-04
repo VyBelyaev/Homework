@@ -1,16 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void deal(int *xp, int *yp){
-    int temp = *xp;
-    *xp = *yp;
-    *yp = temp;
-}
-void deal(char *xp, char *yp){
-    int temp = *xp;
-    *xp = *yp;
-    *yp = temp;
-}
+
 char *getString(int size){
     char *array = new char[size];
     scanf(array,size);
